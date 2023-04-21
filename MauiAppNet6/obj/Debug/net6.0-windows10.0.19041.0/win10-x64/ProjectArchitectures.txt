@@ -1,0 +1,1 @@
+C:\Users\dead1\source\repos\MauiAppNet6\MauiAppNet6\MauiAppNet6.csproj;x64

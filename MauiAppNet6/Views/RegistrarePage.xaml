@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppNet6.Views.RegistrarePage"
+             Title="RegistrarePage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Login Data"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Username"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+    
+        <Entry x:Name="utilizator" 
+               Text="{Binding Username}"/>
+
+        <Label Text="Parola"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        
+        <Entry x:Name="parola" 
+               Text="{Binding Parola}"/>
+
+        <Label Text="Nume"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="nume" 
+               Text="{Binding Nume}"/>
+
+        <Label Text="Prenume"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="prenume" 
+               Text="{Binding prenume}"/>
+
+
+        <Button Text="Inregistrare"
+                Clicked="RegistrareBtn">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

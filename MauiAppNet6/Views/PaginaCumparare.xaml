@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppNet6.Views.PaginaCumparare"
+             Title="PaginaCumparare">
+    <VerticalStackLayout>
+        <Label 
+            Text="Numarul de persoane"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="entryNrPers"
+               Placeholder="Introduceti numarul de persoane"
+               Keyboard="Numeric"
+               />
+        <Label Text="Data plecari">
+            </Label>
+        <DatePicker MinimumDate="{Binding pachet.minDate}"
+                    MaximumDate="{Binding pachet.maxDate}">
+            </DatePicker>
+
+        <Button 
+            x:Name="CumparBtn"
+            Text="Cumpara">
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>
