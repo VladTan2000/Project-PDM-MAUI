@@ -14,13 +14,16 @@
                />
         <Label Text="Data plecari">
             </Label>
-        <DatePicker MinimumDate="{Binding pachet.minDate}"
-                    MaximumDate="{Binding pachet.maxDate}">
+        <DatePicker 
+            x:Name="inceperePachet"
+            MinimumDate="{Binding pachet.minDate}"
+            MaximumDate="{Binding pachet.maxDate}">
             </DatePicker>
 
         <Button 
             x:Name="CumparBtn"
-            Text="Cumpara">
+            Text="Cumpara"
+            Clicked="CumparBtn_Clicked">
         </Button>
 
     </VerticalStackLayout>

@@ -15,16 +15,15 @@ public partial class LoginPage : ContentPage
 		Utilizator utilizatorLocal;
 		utilizatorLocal=App.UtilizatorRepository.passwordCheck(utilizator.Text, parola.Text);
 		if (utilizatorLocal == null) {
-            DisplayAlert("Logare Failed", "Date de logare incorecte, va rugam incercati din nou", "Pa");
+            await DisplayAlert("Logare Failed", "Date de logare incorecte, va rugam incercati din nou", "Ok");
 			return;
         }
 		var navigationParams=new Dictionary<string, object>
 		{
 			{"utilizator",utilizatorLocal }
 		};
-        await Shell.Current.GoToAsync("PacheteList",navigationParams);
+        await Shell.Current.GoToAsync("PaginaMeniu",navigationParams);
 
-        //return App.UtilizatorRepository.passwordCheck(username,password);
     }
 
 

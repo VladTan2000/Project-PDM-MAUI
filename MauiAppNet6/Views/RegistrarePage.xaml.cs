@@ -11,6 +11,7 @@ public partial class RegistrarePage : ContentPage
     {
 		App.UtilizatorRepository.Init();
 		App.UtilizatorRepository.Add(new Models.Utilizator(nume.Text, prenume.Text, utilizator.Text, parola.Text));
+        DisplayAlert("Inregisrare Reusita", "Inregistrarea a fost efecutata cu succes", "Ok");
     }
 
 	

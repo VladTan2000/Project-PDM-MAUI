@@ -17,7 +17,9 @@ public static class MauiProgram
 			});
         string dbpath ="C:\\Users\\dead1\\source\\repos\\MauiAppNet6\\MauiAppNet6\\travel.db";
 		builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<UtilizatorRepository>(s, dbpath));
+        builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<ComenziRepository>(s, dbpath));
 
-		return builder.Build();
+
+        return builder.Build();
 	}
 }

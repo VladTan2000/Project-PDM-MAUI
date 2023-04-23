@@ -40,6 +40,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Resources.Styl
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/dead1/source/repos/MauiAppNet6/MauiAppNet6/Views/ComenziView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Views.ComenziView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ComenziView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ComenziView.xaml
+
+[C:/Users/dead1/source/repos/MauiAppNet6/MauiAppNet6/Views/DatePersView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Views.DatePersView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DatePersView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DatePersView.xaml
+
 [C:/Users/dead1/source/repos/MauiAppNet6/MauiAppNet6/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Views.LoginPage.xaml
@@ -63,6 +75,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Views.PaginaCumparare.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PaginaCumparare.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PaginaCumparare.xaml
+
+[C:/Users/dead1/source/repos/MauiAppNet6/MauiAppNet6/Views/PaginaMeniu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppNet6.Views.PaginaMeniu.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PaginaMeniu.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PaginaMeniu.xaml
 
 [C:/Users/dead1/source/repos/MauiAppNet6/MauiAppNet6/Views/RegistrarePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

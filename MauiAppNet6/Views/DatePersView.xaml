@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppNet6.Views.DatePersView"
+             Title="DatePersView">
+    <ScrollView  >
+        <VerticalStackLayout>
+            <VerticalStackLayout Margin="24, 10" Spacing="10" >
+                <HorizontalStackLayout>
+                    <Label  Text="Nume" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Entry x:Name="entryNume" Text="{Binding utilizator.nume}" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label  Text="Prenume" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Entry x:Name="entryPrenume" Text="{Binding utilizator.prenume}"  FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Username " FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Entry x:Name="entryUser" Text="{Binding utilizator.username}" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Parola" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Entry x:Name="entryPass" Text="{Binding utilizator.password}" FontSize="30" FontFamily="OpenSansRegular" />
+                </HorizontalStackLayout>
+                <Button Text="Updateaza datele"
+                        Clicked="Update_Btn">
+                 </Button>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

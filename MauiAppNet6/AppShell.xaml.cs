@@ -13,6 +13,10 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("PaginaCumparare", typeof(PaginaCumparare));
 		Routing.RegisterRoute("LoginPage", typeof(LoginPage));
 		Routing.RegisterRoute("RegistrarePage", typeof(RegistrarePage));
+        Routing.RegisterRoute("PaginaMeniu", typeof(PaginaMeniu));
+        Routing.RegisterRoute("ComenziView", typeof(ComenziView));
+        Routing.RegisterRoute("DatePersView", typeof(DatePersView));
+
 
     }
 }

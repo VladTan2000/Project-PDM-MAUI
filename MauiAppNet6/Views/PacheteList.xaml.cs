@@ -29,7 +29,8 @@ public partial class PacheteList : ContentPage, IQueryAttributable,INotifyCollec
             Pachet pachet = e.CurrentSelection.FirstOrDefault() as Pachet;
             var navigationParams = new Dictionary<string, object>
             {
-                { "pachet", pachet }
+                { "pachet", pachet },
+                { "utilizator",utilizator}
             };
             await Shell.Current.GoToAsync("PachetView", navigationParams);
 

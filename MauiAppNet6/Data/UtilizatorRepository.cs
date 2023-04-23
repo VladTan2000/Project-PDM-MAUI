@@ -26,7 +26,13 @@ namespace MauiAppNet6.Data
         {
             conn=new SQLiteConnection(_dbPath);
             conn.Insert(utilizator);
+            
         }
+
+        public void Update(Utilizator utilizator) { 
+        conn.Update(utilizator);
+        }
+
         public Utilizator passwordCheck(String username,String password)
         {
             conn = new SQLiteConnection(_dbPath);

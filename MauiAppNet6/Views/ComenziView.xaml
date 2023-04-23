@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppNet6.Views.ComenziView"
+             Title="ComenziView">
+    <CollectionView x:Name="productsCollection"
+                ItemsSource="{Binding Comenzi}"
+                Margin="10"
+                SelectionMode="Single">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <VerticalStackLayout>
+                    <FlexLayout Wrap="Wrap">
+                        <Label Text="ID: " FontSize="Title"  FontAttributes="Bold" />
+                        <Label Text="{Binding id} " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Nume: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding utilizator.nume}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Prenume: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding utilizator.prenume}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Locatie: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding pachet.locatie}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Numar Persoane: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding pachet.numarPers}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Data Incepere: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding inceperePachet ,StringFormat='{0:MMMM dd, yyyy}'}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Data sfarsire: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding terminarePachet ,StringFormat='{0:MMMM dd, yyyy}'}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Pret: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding pret}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Numar Zile: " FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding pachet.numarZile}" FontSize="Title" FontAttributes="Bold" />
+                    </FlexLayout>
+                </VerticalStackLayout> 
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
