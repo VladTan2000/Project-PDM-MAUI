@@ -3,6 +3,7 @@ using MauiAppNet6.Models;
 using MuaiAppNet6.Services;
 using SQLite;
 using SQLiteNetExtensions.Extensions;
+using SQLiteNetExtensionsAsync.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -45,15 +46,14 @@ namespace MauiAppNet6.Data
         {
             ObservableCollection<Comanda> temp= new ObservableCollection<Comanda>(); 
             conn=new SQLiteConnection(_dbPath);
-            List<Comanda> comenzis = new List<Comanda>();
-            comenzis = conn.GetAllWithChildren<Comanda>();
+            List<Comanda> comenzis = conn.GetAllWithChildren<Comanda>();
             List<Comanda> returnComanda = new List<Comanda>();
             for (int i = 0; i < comenzis.Count; i++) {
-                    returnComanda.Add(comenzis[i]);
+                returnComanda.Add(comenzis.ElementAt(i));
             }
             for(int i=0;i<comenzis.Count;i++)
             {
-                temp.Add(comenzis[i]);
+                temp.Add(comenzis.ElementAt(i));
             }
             return temp;
         }
@@ -69,15 +69,14 @@ namespace MauiAppNet6.Data
         {
             ObservableCollection<Comanda> temp = new ObservableCollection<Comanda>();
             conn = new SQLiteConnection(_dbPath);
-            List<Comanda> comenzis = new List<Comanda>();
-            comenzis = conn.GetAllWithChildren<Comanda>();
+            List<Comanda> comenzis = conn.GetAllWithChildren<Comanda>();
             List<Comanda> returnComanda = new List<Comanda>();
             for (int i = 0; i < comenzis.Count; i++)
             {
-                if (comenzis[i].utilizator.id==utilizator.id)
+                if (comenzis.ElementAt(i).utilizator.id==utilizator.id)
                 {
-                    comenzis[i].pachet = pachets.FirstOrDefault(pac => pac.id == comenzis[i].idpachet);
-                    returnComanda.Add(comenzis[i]);
+                    comenzis.ElementAt(i).pachet = pachets.FirstOrDefault(pac => pac.id == comenzis.ElementAt(i).idpachet);
+                    returnComanda.Add(comenzis.ElementAt(i));
                 }
             }
             for (int i = 0; i < returnComanda.Count; i++)

@@ -22,7 +22,7 @@
                     <Label Text="Username " FontSize="30" FontFamily="OpenSansRegular" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Entry x:Name="entryUser" Text="{Binding utilizator.username}" FontSize="30" FontFamily="OpenSansRegular" />
+                    <Entry x:Name="entryUser" Text="{Binding utilizator.username}" Placeholder="Prenume" FontSize="30" FontFamily="OpenSansRegular" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Parola" FontSize="30" FontFamily="OpenSansRegular" />

@@ -13,7 +13,7 @@ public partial class LoginPage : ContentPage
 
 	public async void verificareParola(object sender, EventArgs e) {
 		Utilizator utilizatorLocal;
-		utilizatorLocal=App.UtilizatorRepository.passwordCheck(utilizator.Text, parola.Text);
+		utilizatorLocal= App.UtilizatorRepository.passwordCheck(utilizator.Text, parola.Text);
 		if (utilizatorLocal == null) {
             await DisplayAlert("Logare Failed", "Date de logare incorecte, va rugam incercati din nou", "Ok");
 			return;

@@ -15,9 +15,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-        string dbpath ="C:\\Users\\dead1\\source\\repos\\MauiAppNet6\\MauiAppNet6\\travel.db";
-		builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<UtilizatorRepository>(s, dbpath));
-        builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<ComenziRepository>(s, dbpath));
+        var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+		path = Path.Combine(path, "travel.db");
+        string dbpath = Path.Combine(Directory.GetCurrentDirectory(), "travel.db");
+		builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<UtilizatorRepository>(s, path));
+        builder.Services.AddSingleton(s => ActivatorUtilities.CreateInstance<ComenziRepository>(s, path));
 
 
         return builder.Build();

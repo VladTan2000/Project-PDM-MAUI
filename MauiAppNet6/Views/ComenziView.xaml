@@ -13,7 +13,6 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <VerticalStackLayout>
-                    <FlexLayout Wrap="Wrap">
                         <Label Text="ID: " FontSize="Title"  FontAttributes="Bold" />
                         <Label Text="{Binding id} " FontSize="Title" FontAttributes="Bold" />
                         <Label Text="Nume: " FontSize="Title" FontAttributes="Bold" />
@@ -29,10 +28,9 @@
                         <Label Text="Data sfarsire: " FontSize="Title" FontAttributes="Bold" />
                         <Label Text="{Binding terminarePachet ,StringFormat='{0:MMMM dd, yyyy}'}" FontSize="Title" FontAttributes="Bold" />
                         <Label Text="Pret: " FontSize="Title" FontAttributes="Bold" />
-                        <Label Text="{Binding pret}" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="{Binding pachet.pret}" FontSize="Title" FontAttributes="Bold" />
                         <Label Text="Numar Zile: " FontSize="Title" FontAttributes="Bold" />
                         <Label Text="{Binding pachet.numarZile}" FontSize="Title" FontAttributes="Bold" />
-                    </FlexLayout>
                 </VerticalStackLayout> 
             </DataTemplate>
         </CollectionView.ItemTemplate>
